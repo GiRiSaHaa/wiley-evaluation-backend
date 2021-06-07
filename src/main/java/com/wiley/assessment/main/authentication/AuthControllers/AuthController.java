@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+/**
+ * Controller class for get auth related requests
+ */
 @CrossOrigin(maxAge = 3600)
 @Controller
 @RequestMapping
@@ -26,12 +29,24 @@ public class AuthController {
 
     private JwtUtils jwtUtils;
 
+    /**
+     * Injecting dependencies
+     * @param authenticationManager the AuthenticationManager
+     * @param userInfoService the UserInfoService
+     * @param jwtUtils the JWT Utils
+     */
     public AuthController(AuthenticationManager authenticationManager, UserInfoService userInfoService, JwtUtils jwtUtils) {
         this.authenticationManager = authenticationManager;
         this.userInfoService = userInfoService;
         this.jwtUtils = jwtUtils;
     }
 
+    /**
+     * Authenticate endpoint to authorize user with provided credentials
+     * @param authRequest the AuthRequest with username and password
+     * @return the JWT token
+     * @throws Exception
+     */
     @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
     public ResponseEntity<?> createAuthToken(@RequestBody AuthRequest authRequest) throws Exception{
         try {

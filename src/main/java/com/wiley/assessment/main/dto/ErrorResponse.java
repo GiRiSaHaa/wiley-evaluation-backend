@@ -6,6 +6,9 @@ import org.springframework.http.HttpStatus;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * DTO class for return error response.
+ */
 @Data
 public class ErrorResponse {
     private HttpStatus status;

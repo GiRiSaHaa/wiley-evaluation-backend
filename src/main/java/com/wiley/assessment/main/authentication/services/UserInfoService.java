@@ -10,6 +10,9 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Optional;
 
+/**
+ * Service class for handle user related services.
+ */
 @Service
 public class UserInfoService implements UserDetailsService {
 
@@ -19,6 +22,12 @@ public class UserInfoService implements UserDetailsService {
         this.userRepository = userRepository;
     }
 
+    /**
+     * Load user by username for authenticate.
+     * @param userName the username
+     * @return the UserDetails
+     * @throws UsernameNotFoundException
+     */
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
         Optional<User> user = userRepository.getUserByUsername(userName);

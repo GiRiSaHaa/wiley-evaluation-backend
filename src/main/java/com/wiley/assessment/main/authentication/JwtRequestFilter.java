@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * This class is responsible for filtering and validating API calls.
+ */
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {
 

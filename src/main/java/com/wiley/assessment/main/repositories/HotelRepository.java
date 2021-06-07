@@ -12,12 +12,19 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Repository class for manage hotel related queries.
+ */
 @Repository
 public class HotelRepository {
 
     // create Object Mapper
     ObjectMapper mapper = new ObjectMapper();
 
+    /**
+     * Return all hotels.
+     * @return the list of Hotels
+     */
     public List<Hotel> getAllHotels() {
         List<Hotel> hotels = null;
 
@@ -32,11 +39,22 @@ public class HotelRepository {
         return hotels;
     }
 
+    /**
+     * Return hotel for given ID
+     * @param id the Hotel ID
+     * @return the Hotel
+     */
     public Optional<Hotel> getAllHotel(int id) {
         return getAllHotels().stream().filter( h -> h.getId() == id).findFirst();
     }
 
+    /**
+     * Check availability of hotel for given request.
+     * @param request the BookingRequest.
+     * @return True if available otherwise False
+     */
     public boolean checkAvailability(BookingRequest request) {
+        // TODO: validation to be happen here, returning true for happy path
         return true;
     }
 }

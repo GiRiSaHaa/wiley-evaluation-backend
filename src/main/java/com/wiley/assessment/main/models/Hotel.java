@@ -2,6 +2,9 @@ package com.wiley.assessment.main.models;
 
 import lombok.Data;
 
+/**
+ * Model class for Hotel
+ */
 @Data
 public class Hotel {
     private int id;
