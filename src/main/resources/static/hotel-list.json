@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Allentown, Pennsylvania Hotel",
+    "imgUrl": "https://picsum.photos/id/57/200",
+    "mark": "0.7 km from Dorney Park Wildwater Kingdom",
+    "description": "This Allentown, Pennsylvania hotel is located across the street from Dorney Park amusement park and Wild Water Kingdom. Some rooms feature a view of Dorney Park."
+  },
+  {
+    "id": 2,
+    "name": "Four Points by Sheraton Allentown Lehigh Valley",
+    "imgUrl": "https://picsum.photos/id/37/200",
+    "mark": "7.3 km from Dorney Park Wildwater Kingdom",
+    "description": "Four Points by Sheraton Allentown Lehigh Valley is located across from Dorney Park & Wildwater Kingdom theme park, and it is nearby Cedar Crest College, Muhlenberg College, DeSales University."
+  },
+  {
+    "id": 3,
+    "name": "Kings Head",
+    "imgUrl": "https://picsum.photos/id/36/200",
+    "mark": "Situated on the village green in Lanchester",
+    "description": "Situated on the village green in Lanchester, the King’s Head is in a traditional village setting just 7 minutes’ drive from Durham."
+  },
+  {
+    "id": 4,
+    "name": "The Bull Inn Walsingham",
+    "imgUrl": "https://picsum.photos/id/38/200",
+    "mark": "0.3 km from Little Walsingham",
+    "description": "Located in Little Walsingham, The Bull Inn Walsingham features a restaurant, bar, garden, and free WiFi. All rooms feature a flat-screen TV with satellite channels and a private bathroom."
+  },
+  {
+    "id": 5,
+    "name": "The Mendip Inn Opens in new window",
+    "imgUrl": "https://picsum.photos/id/39/200",
+    "mark": "7.3 km from Dorney Park Wildwater Kingdom",
+    "description": "Situated in Binegar, The Mendip Inn has a restaurant, bar, shared lounge, and free WiFi. At the inn, the rooms are fitted with a desk and a TV."
+  }
+]
